@@ -32,6 +32,9 @@ cmp_res <- cmp_res %>%
 
 # ============================================================================ #
 
+tiff(filename = "../figures/res-all.tif",
+     width = 10, height = 14, units = "in", res = 150)
+
 # Plot
 myperf %>%
   #
@@ -90,7 +93,9 @@ myperf %>%
   #Facetting
   facet_grid(Metric ~ Organism, scales = "free_y")
 
-ggsave(filename = "../figures/res-all.png", width = 10, height = 14, units = "in")
+dev.off()
+
+#ggsave(filename = "../figures/res-all.png", width = 10, height = 14, units = "in")
 
 
 # Break in two pages
