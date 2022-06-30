@@ -32,8 +32,11 @@ cmp_res <- cmp_res %>%
 
 # ============================================================================ #
 
-tiff(filename = "../figures/res-all.tif",
-     width = 10, height = 14, units = "in", res = 150)
+# tiff(filename = "../figures/res-all.tif",
+#      width = 10, height = 14, units = "in", res = 300, compression = "lzw")
+
+pdf(file = "../figures/res-all.pdf",
+     width = 10, height = 14)
 
 # Plot
 myperf %>%
