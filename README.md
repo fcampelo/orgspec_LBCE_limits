@@ -14,5 +14,7 @@ done in Python (scripts and environment under `/code/02_modelling/`).
   - heterogeneous data for each organism (`df_heterogeneous.rds`)
   - baseline performance estimates extracted from <https://academic.oup.com/bioinformatics/article/37/24/4826/6325084> (`analysis.rds`)
   - results for each organism (`/data/Results/...`). The .CSV files containing the resulting predictions have been compressed to comply with Github's file and repository size limits. Please expand these files prior to running the scripts in `/code`.
+
+- Output files and summary tables of calculated performance metrics for all predictors are under `/outputs`
   
 If there are any queries, please contact me at <f.campelo@aston.ac.uk> or <fcampelo@gmail.com>.
